@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <a href="#">
+            <img src="img/NAVER_CI_Green.png" alt="logo" id="logo">
+        </a>
+    </div><!-- //header -->
+
+    <div id="wrapper">
+        <div id="content">
+            <!-- id -->
+            <div>
+                <h3 class="join_title">
+                    <label for="id">아이디</label>
+                </h3>
+                <span class="box int_id">
+                    <input type="text" id="id" class="int" maxlength="20">
+                    <span class="step_url">@naver.com</span>
+                </span>
+                <span class="error_next_box e1">에러출력</span>
+            </div>
+            <!-- //id -->
+
+            <!-- pw1 -->
+            <div>
+                <h3 class="join_title">
+                    <label for="psw1">비밀번호</label>
+                </h3>
+                <span class="box int_pass">
+                    <input type="text" id="psw1" class="int" maxlength="16">
+                    <span id="alertTxt">사용불가</span>
+                    <img src="img/m_icon_pass.png" alt="비밀번호" id="pswd1_img1" class="paswdImg">
+                </span>
+                <span class="error_next_box e2">에러출력</span>
+            </div>
+            <!-- //pw1 -->
+
+            <!-- pw2 -->
+            <div>
+                <h3 class="join_title">
+                    <label for="pswd2">비밀번호 재확인</label>
+                </h3>
+                <span class="box int_pass_check">
+                    <input type="text" id="pswd2" class="int" maxlength="20">
+                    <span id="alertTxt">사용불가</span>
+                    <img src="img/m_icon_check_disable.png" alt="비밀번호" id="pswd2_img1" class="paswdImg">
+                </span>
+                <span class="error_next_box e3">에러출력</span>
+            </div>
+            <!-- //pw2 -->
+
+            <!-- name -->
+            <div>
+                <h3 class="join_title">
+                    <label for="name">이름</label>
+                </h3>
+                <span class="box int_name">
+                    <input type="text" id="name" class="int" maxlength="20">
+                </span>
+                <span class="error_next_box e4">에러출력</span>
+            </div>
+            <!-- //name -->
+
+            <!-- 생년월일 -->
+            <div>
+                <h3 class="join_title">
+                    <label for="yy">생년월일</label>
+                </h3>
+
+                <div id="bir_wrap">
+                    <!-- 년도 -->
+                    <div id="bir_yy">
+                        <div class="box">
+                            <input type="text" id="yy" class="int" maxlength="4" placeholder="년(4자)">
+                        </div>
+                    </div>
+                    <!-- 월 -->
+                    <div id="bir_mm">
+                        <span class="box">
+                            <select id="mm" class="sel">
+                                <option>월</option>
+                                <option value="01">1</option>
+                                <option value="02">2</option>
+                                <option value="03">3</option>
+                                <option value="04">4</option>
+                                <option value="05">5</option>
+                                <option value="06">6</option>
+                                <option value="07">7</option>
+                                <option value="08">8</option>
+                                <option value="09">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </span>
+                    </div>
+                    <!-- 일 -->
+                    <div id="bir_dd">
+                        <span class="box">
+                            <input type="text" id="dd" class="int" maxlength="2" placeholder="일">
+                        </span>
+                    </div>
+                </div>
+
+                <span class="error_next_box e5">에러출력</span>
+            </div>
+            <!-- //생년월일 -->
+
+            <!-- 성별 -->
+            <div>
+                <h3 class="join_title">
+                    <label for="gender">성별</label>
+                </h3>
+                <span class="box gender_code">
+                    <select id="gender" class="sel">
+                        <option>성별</option>
+                        <option value="M">남자</option>
+                        <option value="F">여자</option>
+                    </select>
+                </span>
+                <span class="error_next_box e6">필수정보입니다.</span>
+            </div>
+            <!-- //성별 -->
+
+            <!-- 이메일 -->
+            <div>
+                <h3 class="join_title">
+                    <label for="email">본인확인 이메일<span class="optional">(선택)</span></label>
+                </h3>
+                <span class="box int_email">
+                    <input type="text" id="email" class="int" maxlength="100" placeholder="선택입력">
+                </span>
+                <span class="error_next_box e7">이메일 주소를 다시 확인해주세요.</span>
+            </div>
+            <!-- //이메일 -->
+
+            <!-- mobile -->
+            <div>
+                <h3 class="join_title">
+                    <label for="phoneNo">휴대전화</label>
+                </h3>
+                <span class="box int_mobile">
+                    <input type="text" id="phoneNo" class="int" maxlength="16" placeholder="전화번호 입력">
+                </span>
+                <span class="error_next_box e8">에러출력</span>
+            </div>
+            <!-- //mobile -->
+
+            <!-- 버튼 -->
+            <div class="btn_area">
+                <button type="button" id="btnJoin">
+                    <span>가입하기</span>
+                </button>
+            </div>
+            <!-- //버튼 -->
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

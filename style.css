@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;padding: 0;
+}
+
+body{
+    background-color: #f5f6f7;
+}
+
+#content{
+    width: 460px; margin: 0 auto;
+}
+
+/* header */
+#header{
+    text-align: center;
+    padding: 62px 0 20px;
+}
+#header a{}
+#header a img{
+    width: 240px;height: 44px;
+    cursor: pointer;
+}
+
+/* 입력폼 */
+
+input{
+    outline: none;
+}
+h3{
+    font-size: 14px;
+    font-weight: 700;
+    margin: 19px 0 8px;
+}
+.box{
+    position: relative;
+    display: block;
+    width: 100%; height: 51px;
+    border: 1px solid #dadada;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 10px 14px 10px;
+}
+.box.int_id{
+    padding-right: 100px;
+}
+.int{
+    display: block;
+    width: 100%; height: 29px;
+    border: none;
+    font-size: 15px;
+    background-color: #fff;
+}
+.step_url{
+    position: absolute;
+    right: 13px;top: 14px;
+    font-size: 15px;
+    color: #8e8e8e;
+}
+
+
+.paswdImg{
+    position: absolute;
+    right: 16px;top: 50%;
+    transform: translateY(-50%);
+    width: 18px;height: 20px;
+}
+
+
+
+#bir_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+#bir_yy{
+    width: 147px;
+}
+#bir_mm{
+    width: 147px;
+}
+#bir_dd{
+    width: 147px;
+}
+
+select.sel{
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    /*다운 화살표삭제 */
+    appearance: none;
+    background: url(img/sel_arr_2x.gif) no-repeat 100% 50%;
+    background-size: 20px 8px;
+    outline: none;
+}
+
+/* 버튼 */
+.btn_area{
+    margin: 30px 0 91px;
+}
+.btn_area #btnJoin{
+    width: 100%;
+    border: none;
+    background-color: #08a600;
+    font-size: 20px;
+    color: #fff;
+    padding: 17px 0 17px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* 에러메세지 */
+.error_next_box{
+    display: none;
+    color: red;
+    margin-top: 9px;
+    font-size: 12px;
+}
+#alertTxt{
+    display: none;
+    color: red;
+    position: absolute;
+    right: 40px;top: 17px;
+    font-size: 12px;
+}
+
